@@ -4,11 +4,11 @@ Generates random codenames for your projects.
 Install `codename` to your `$PATH`. Then run `codename` or `codename 3`.
 
 ## Examples
-- gedukube
-- toputise
-- lomozofu
-- dedafutu
-- gufusoma
+- DH-09
+- MP-91
+- PX-92
+- LP-04
+- FE-18
 
 ## Why use codenames instead of proper names?
 - It enables you to quickly start prototyping ideas and not blocked by naming.

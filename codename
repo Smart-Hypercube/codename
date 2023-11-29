@@ -2,17 +2,9 @@
 import random
 import sys
 
-# Do not use 'cjqrvwxy' because:
-#   c: often pronounced 'k' or 's'
-#   w: often pronounced 'u'
-#   y: often pronounced 'i'
-#   r: often pronounced 'l'
-#   v: sounds bad and difficult to pronounce 'vu'
-#   jqx: lack of consensus on how to pronounce them
-c = lambda: random.choice('bdfghklmnpstz')
-v = lambda: random.choice('aeiou')
-cv = lambda: c() + v()
-codename = lambda: cv() + cv() + cv() + cv()
+l = lambda: random.choice('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+d = lambda: random.choice('0123456789')
+codename = lambda: l() + l() + '-' + d() + d()
 
 num = int(sys.argv[1]) if len(sys.argv) > 1 else 1
 for i in range(num):
